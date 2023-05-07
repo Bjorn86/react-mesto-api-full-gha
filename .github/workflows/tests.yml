@@ -1,0 +1,81 @@
+name: Tests 15 sprint
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+
+jobs:
+  test_config:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up GitHub Actions
+      uses: actions/checkout@v3
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.x
+    - name: Сheck if the repository is private
+      run: exit 1
+      if: ${{github.event.repository.private}}
+    - name: Get testing lib
+      run: set -eu && git clone --branch master --single-branch --depth 1 https://github.com/Yandex-Practicum/web-autotest-public.git
+    - name: Copy Makefile
+      run: cp ./web-autotest-public/Makefile ./Makefile
+    - name: Installing Dependencies
+      run: cd backend&&npm i
+    - name: Cache test dependencies
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: ./web-autotest-public
+        key: modules-${{ hashFiles('**/pnpm-lock.yaml') }}
+    - name: Install test dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+          npm install -g pnpm@7.30.3
+          pnpm i --fix-lockfile --prefix web-autotest-public/
+    - name: Run test config
+      run: make proj15-test-config
+  test_endpoints:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up GitHub Actions
+      uses: actions/checkout@v3
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.x
+    - name: Сheck if the repository is private
+      run: exit 1
+      if: ${{github.event.repository.private}}
+    - name: Get testing lib
+      run: set -eu && git clone --branch master --single-branch --depth 1 https://github.com/Yandex-Practicum/web-autotest-public.git
+    - name: Copy Makefile
+      run: cp ./web-autotest-public/Makefile ./Makefile
+    - name: Start MongoDB
+      uses: supercharge/mongodb-github-action@1.6.0
+      with:
+        mongodb-version: '4.4'
+    - name: Installing Dependencies
+      run: cd backend&&npm i
+    - name: Installing wait-port
+      run: npm install -g wait-port
+    - name: Run server
+      run: npm --prefix backend/ run start & wait-port -t 30000 localhost:3000
+    - name: Cache test dependencies
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: ./web-autotest-public
+        key: modules-${{ hashFiles('**/pnpm-lock.yaml') }}
+    - name: Install test dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+          npm install -g pnpm@7.30.3
+          pnpm i --fix-lockfile --prefix web-autotest-public/
+    - name: Run test endpoints
+      run: make proj15-test-endpoints
