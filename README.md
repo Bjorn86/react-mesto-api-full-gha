@@ -10,6 +10,7 @@
 - [Обзор проекта](#обзор-проекта)
   - [Задачи проекта](#задачи-проекта)
   - [Функциональность проекта](#функциональность-проекта)
+  - [Screenshot](#screenshot)
   - [Директории проекта](#директории-проекта)
   - [Запуск проекта](#запуск-проекта)
   - [Ссылки](#ссылки)
@@ -65,6 +66,10 @@
   - Возможность просматривать детальную фотографию карточки
   - Реализована валидация форм с помощью кастомного хука
 
+### Screenshot
+
+![Desktop screenshot](./screenshot/mesto_1.png)
+
 ### Директории проекта
 
 - `/backend` — директория с файлами бэкенд части проекта
@@ -85,10 +90,14 @@
 
 ### Ссылки
 
-- [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
+- IP 158.160.53.34
+- Frontend <https://mesto.ld-webdev.nomoredomains.monster>
+- Backend <https://api.mesto.ld-webdev.nomoredomains.monster>
+
+<!-- - [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
 - [Ссылка на страницу проекта](https://mesto.ld-webdev.nomoredomains.monster)
 - [Ссылка на API сервер проекта](https://api.mesto.ld-webdev.nomoredomains.monster)
-- IP-адрес проекта: 158.160.53.34
+- IP-адрес проекта: 158.160.53.34 -->
 
 ## Ход выполнения проекта
 
