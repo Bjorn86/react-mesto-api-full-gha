@@ -1,0 +1,46 @@
+{
+  "name": "react-mesto-api-full-gha",
+  "version": "1.0.0",
+  "description": "Mesto Project",
+  "main": "app.js",
+  "scripts": {
+    "lint": "npx eslint ./",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjorn86/react-mesto-api-full-gha.git"
+  },
+  "keywords": [
+    "backend",
+    "frontend"
+  ],
+  "author": "Danila Legkobytov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bjorn86/react-mesto-api-full-gha/issues"
+  },
+  "homepage": "https://github.com/Bjorn86/react-mesto-api-full-gha#readme",
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^15.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-winston": "^4.2.0",
+    "helmet": "^6.1.5",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "validator": "^13.9.0",
+    "winston": "^3.8.2"
+  }
+}
