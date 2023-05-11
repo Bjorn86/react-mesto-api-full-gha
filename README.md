@@ -13,7 +13,7 @@
   - [Screenshot](#screenshot)
   - [Директории проекта](#директории-проекта)
   - [Запуск проекта](#запуск-проекта)
-  - [Ссылки](#ссылки)
+  - [Ссылки на проект](#ссылки-на-проект)
 - [Ход выполнения проекта](#ход-выполнения-проекта)
   - [Используемые технологии](#используемые-технологии)
   - [Чему я научился работая над проектом](#чему-я-научился-работая-над-проектом)
@@ -88,11 +88,14 @@
 - `npm run start` — запускает сервер
 - `npm run dev` — запускает сервер с hot-reload
 
-### Ссылки
+<!-- ### Ссылки -->
 
-- IP 158.160.53.34
-- Frontend <https://mesto.ld-webdev.nomoredomains.monster>
-- Backend <https://api.mesto.ld-webdev.nomoredomains.monster>
+### Ссылки на проект
+
+IP 158.160.53.34
+Frontend <https://mesto.ld-webdev.nomoredomains.monster>
+Backend <https://api.mesto.ld-webdev.nomoredomains.monster>
+[Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
 
 <!-- - [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
 - [Ссылка на страницу проекта](https://mesto.ld-webdev.nomoredomains.monster)
