@@ -29,8 +29,9 @@ module.exports.createCard = (req, res, next) => {
     .catch((err) => {
       if (err instanceof ValidationError) {
         next(new IncorrectDataError('Переданы некорректные данные для создания карточки.'));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -51,11 +52,11 @@ module.exports.deleteCard = (req, res, next) => {
     .catch((err) => {
       if (err instanceof DocumentNotFoundError) {
         next(new NotFoundError(`В базе данных не найдена карточка с ID: ${req.params.cardId}.`));
-      }
-      if (err instanceof CastError) {
+      } else if (err instanceof CastError) {
         next(new IncorrectDataError(`Передан некорректный ID карточки: ${req.params.cardId}.`));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -67,11 +68,11 @@ const cardLikesUpdate = (req, res, updateData, next) => {
     .catch((err) => {
       if (err instanceof DocumentNotFoundError) {
         next(new NotFoundError(`В базе данных не найдена карточка с ID: ${req.params.cardId}.`));
-      }
-      if (err instanceof CastError) {
+      } else if (err instanceof CastError) {
         next(new IncorrectDataError(`Передан некорректный ID карточки: ${req.params.cardId}.`));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 

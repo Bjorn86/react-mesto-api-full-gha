@@ -37,11 +37,11 @@ const findUserById = (req, res, requiredData, next) => {
     .catch((err) => {
       if (err instanceof DocumentNotFoundError) {
         next(new NotFoundError(`В базе данных не найден пользователь с ID: ${requiredData}.`));
-      }
-      if (err instanceof CastError) {
+      } else if (err instanceof CastError) {
         next(new IncorrectDataError(`Передан некорректный ID пользователя: ${requiredData}.`));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -80,11 +80,11 @@ module.exports.createUser = (req, res, next) => {
     .catch((err) => {
       if (err instanceof ValidationError) {
         next(new IncorrectDataError('Переданы некорректные данные для создания пользователя.'));
-      }
-      if (err.code === 11000) {
+      } else if (err.code === 11000) {
         next(new ConflictError('Указанный email уже зарегистрирован. Пожалуйста используйте другой email'));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -96,14 +96,13 @@ const userUpdate = (req, res, updateData, next) => {
     .catch((err) => {
       if (err instanceof DocumentNotFoundError) {
         next(new NotFoundError(`В базе данных не найден пользователь с ID: ${req.user._id}.`));
-      }
-      if (err instanceof CastError) {
+      } else if (err instanceof CastError) {
         next(new IncorrectDataError(`Передан некорректный ID пользователя: ${req.user._id}.`));
-      }
-      if (err instanceof ValidationError) {
+      } else if (err instanceof ValidationError) {
         next(new IncorrectDataError('Переданы некорректные данные для редактирования профиля.'));
+      } else {
+        next(err);
       }
-      next(err);
     });
 };
 
@@ -136,12 +135,7 @@ module.exports.login = (req, res, next) => {
       });
       res.send({ message: 'Успешный вход' });
     })
-    .catch((err) => {
-      if (err instanceof ValidationError) {
-        next(new IncorrectDataError('Переданы некорректные данные для входа.'));
-      }
-      next(err);
-    });
+    .catch(next);
 };
 
 // LOGOUT
