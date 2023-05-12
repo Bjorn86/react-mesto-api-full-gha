@@ -17,14 +17,14 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const cors = require('./middlewares/cors');
 
 // CONFIG VARIABLES
-const PORT = process.env.PORT || 3000;
-const DATABASE = process.env.DATABASE || 'mongodb://localhost:27017/mestodb';
+const { PORT, DATABASE } = process.env;
+const { DEFAULT_PORT, DEFAULT_DATABASE } = require('./utils/config');
 
 // APP VARIABLES
 const app = express();
 
 // DATABASE CONNECT
-mongoose.connect(DATABASE);
+mongoose.connect(DATABASE || DEFAULT_DATABASE);
 
 // PARSERS METHODS
 app.use(express.json());
@@ -49,4 +49,4 @@ app.use(validationErrors());
 app.use(errors);
 
 // SERVER LISTENER
-app.listen(PORT);
+app.listen(PORT || DEFAULT_PORT);

@@ -18,7 +18,7 @@ rootRouter.use('/signin', signin);
 rootRouter.use('/signup', signup);
 rootRouter.use('/users', auth, users);
 rootRouter.use('/cards', auth, cards);
-rootRouter.use('*', notFound);
+rootRouter.use('*', auth, notFound);
 
 // EXPORT ROUTES
 module.exports = rootRouter;
