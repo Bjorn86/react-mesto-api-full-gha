@@ -1,0 +1,20 @@
+.header__btn-hamburger {
+  display: none;
+  width: 24px;
+  height: 22px;
+  background: url("../../../images/hamburger.svg") center center/contain no-repeat, transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.6s;
+}
+
+.header__btn-hamburger:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 544px) {
+  .header__btn-hamburger {
+    display: block;
+  }
+}

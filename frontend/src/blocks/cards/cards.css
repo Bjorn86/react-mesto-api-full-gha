@@ -1,0 +1,10 @@
+.cards {
+  font-family: "Inter", "Arial", sans-serif;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 896px) {
+  .cards {
+    padding: 0 19px;
+  }
+}

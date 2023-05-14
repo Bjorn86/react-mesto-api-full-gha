@@ -1,0 +1,106 @@
+/* VENDOR */
+@import url("./vendor/normalize.css");
+@import url("./vendor/font.css");
+
+/* PAGE */
+@import url("./blocks/page/page.css");
+@import url("./blocks/page/__content/page__content.css");
+
+/* CONTENT */
+@import url("./blocks/content/content.css");
+
+/* HAMBURGER */
+@import url("./blocks/hamburger/hamburger.css");
+@import url("./blocks/hamburger/_active/hamburger_active.css");
+@import url("./blocks/hamburger/__user-email/hamburger__user-email.css");
+@import url("./blocks/hamburger/__btn-sign-out/hamburger__btn-sign-out.css");
+
+/* HEADER */
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/__logo/header__logo.css");
+@import url("./blocks/header/__link/header__link.css");
+@import url("./blocks/header/__nav/header__nav.css");
+@import url("./blocks/header/__btn-sign-out/header__btn-sign-out.css");
+@import url("./blocks/header/__user-email/header__user-email.css");
+@import url("./blocks/header/__btn-hamburger/header__btn-hamburger.css");
+@import url("./blocks/header/__btn-hamburger/_type/header__btn-hamburger_type_close.css");
+
+/* LOGO */
+@import url("./blocks/logo/logo.css");
+
+/* PROFILE */
+@import url("./blocks/profile/profile.css");
+@import url("./blocks/profile/__wrapper/profile__wrapper.css");
+@import url("./blocks/profile/__btn-avatar-edit/profile__btn-avatar-edit.css");
+@import url("./blocks/profile/__avatar/profile__avatar.css");
+@import url("./blocks/profile/__user-wrapper/profile__user-wrapper.css");
+@import url("./blocks/profile/__user-edit/profile__user-edit.css");
+@import url("./blocks/profile/__user-name/profile__user-name.css");
+@import url("./blocks/profile/__btn-edit/profile__btn-edit.css");
+@import url("./blocks/profile/__user-about/profile__user-about.css");
+@import url("./blocks/profile/__btn-add/profile__btn-add.css");
+
+/* CARDS */
+@import url("./blocks/cards/cards.css");
+@import url("./blocks/cards/__wrapper/cards__wrapper.css");
+
+/* CARD */
+@import url("./blocks/card/card.css");
+@import url("./blocks/card/__img/card__img.css");
+@import url("./blocks/card/__btn-del/card__btn-del.css");
+@import url("./blocks/card/__caption/card__caption.css");
+@import url("./blocks/card/__title/card__title.css");
+@import url("./blocks/card/__like-wrapper/card__like-wrapper.css");
+@import url("./blocks/card/__btn-like/card__btn-like.css");
+@import url("./blocks/card/__btn-like/_active/card__btn-like_active.css");
+@import url("./blocks/card/__like-counter/card__like-counter.css");
+
+/* FOOTER */
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__copyright/footer__copyright.css");
+
+/* POPUP */
+@import url("./blocks/popup/popup.css");
+@import url("./blocks/popup/_opened/popup_opened.css");
+@import url("./blocks/popup/_type/popup_type_img.css");
+@import url("./blocks/popup/__container/popup__container.css");
+@import url("./blocks/popup/__container/_type/popup__container_type_form.css");
+@import url("./blocks/popup/__figure-wrapper/popup__figure-wrapper.css");
+@import url("./blocks/popup/__img/popup__img.css");
+@import url("./blocks/popup/__img-caption/popup__img-caption.css");
+@import url("./blocks/popup/__title/popup__title.css");
+@import url("./blocks/popup/__btn-close/popup__btn-close.css");
+@import url("./blocks/popup/__status-wrapper/popup__status-wrapper.css");
+@import url("./blocks/popup/__status-icon/popup__status-icon.css");
+@import url("./blocks/popup/__status-icon/_type/popup__status-icon_type_fail.css");
+@import url("./blocks/popup/__status-icon/_type/popup__status-icon_type_success.css");
+@import url("./blocks/popup/__status-text/popup__status-text.css");
+
+/* PRELOADER */
+@import url("./blocks/preloader/preloader.css");
+@import url("./blocks/preloader/_active/preloader_active.css");
+
+/* AUTHORIZATION */
+@import url("./blocks/authorization/authorization.css");
+@import url("./blocks/authorization/__wrapper/authorization__wrapper.css");
+@import url("./blocks/authorization/__title/authorization__title.css");
+@import url("./blocks/authorization/__text/authorization__text.css");
+@import url("./blocks/authorization/__link/authorization__link.css");
+
+/* FORM */
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/_place/form_place_authorization.css");
+@import url("./blocks/form/_type/form_type_card-delete-confirmation.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__input/_place/form__input_place_authorization.css");
+@import url("./blocks/form/__input/_type/form__input_type_error.css");
+@import url("./blocks/form/__input-error/form__input-error.css");
+@import url("./blocks/form/__input-error/_active/form__input-error_active.css");
+@import url("./blocks/form/__btn-submit/form__btn-submit.css");
+@import url("./blocks/form/__btn-submit/_place/form__btn-submit_place_authorization.css");
+
+/* NOT FOUND */
+@import url("./blocks/not-found/not-found.css");
+@import url("./blocks/not-found/__title/not-found__title.css");
+@import url("./blocks/not-found/__description/not-found__description.css");
+@import url("./blocks/not-found/__link/not-found__link.css");

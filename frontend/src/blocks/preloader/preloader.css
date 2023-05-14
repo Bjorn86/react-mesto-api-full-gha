@@ -1,0 +1,10 @@
+.preloader {
+  font-family: "Inter", "Arial", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  background: url("../../images/preloader.svg") center center/auto no-repeat, rgb(0, 0, 0);
+}

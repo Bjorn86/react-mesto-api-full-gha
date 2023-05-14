@@ -1,0 +1,15 @@
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  justify-items: center;
+  gap: 20px 17px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 896px) {
+  .cards__wrapper {
+    max-width: 581px;
+  }
+}

@@ -1,0 +1,12 @@
+.authorization {
+  font-family: "Inter", "Arial", sans-serif;
+  max-width: 100%;
+  padding: 60px 0;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 544px) {
+  .authorization {
+    padding-top: 40px;
+  }
+}

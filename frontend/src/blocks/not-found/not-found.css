@@ -1,0 +1,9 @@
+.not-found {
+  font-family: "Inter", "Arial", sans-serif;
+  max-width: 100%;
+  padding: 60px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}

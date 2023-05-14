@@ -1,0 +1,17 @@
+.hamburger__btn-sign-out {
+  width: 56px;
+  height: 22px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #a9a9a9;
+  transition: opacity 0.6s;
+}
+
+.hamburger__btn-sign-out:hover {
+  opacity: 0.6;
+}

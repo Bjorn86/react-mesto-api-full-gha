@@ -1,0 +1,24 @@
+.form__btn-submit_place_authorization {
+  margin-top: 186px;
+  background-color: #fff;
+  color: #000;
+}
+
+.form__btn-submit_place_authorization:hover {
+  opacity: 0.85;
+}
+
+.form__btn-submit_place_authorization:disabled {
+  background-color: #CCC;
+  border: 1px solid rgba(255, 255, 255, .2);
+  color: rgba(0, 0, 0, .4);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 544px) {
+  .form__btn-submit_place_authorization {
+    margin-top: 143px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}

@@ -1,0 +1,19 @@
+.not-found__link {
+  margin: 15px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.21;
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.6s;
+}
+
+.not-found__link:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 544px) {
+  .not-found__link {
+    font-size: 14px;
+  }
+}

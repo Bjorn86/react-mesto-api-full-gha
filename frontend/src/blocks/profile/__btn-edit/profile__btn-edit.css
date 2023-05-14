@@ -1,0 +1,25 @@
+.profile__btn-edit {
+  display: inline-flex;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: url('../../../images/profile-edit.svg') center center/10px no-repeat;
+  transition: opacity .6s;
+}
+
+.profile__btn-edit:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 544px) {
+  .profile__btn-edit {
+    position: absolute;
+    min-width: 18px;
+    min-height: 18px;
+    top: 8px;
+    right: -28px;
+    background-size: 7.5px;
+  }
+}

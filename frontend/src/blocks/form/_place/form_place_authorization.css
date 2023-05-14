@@ -1,0 +1,9 @@
+.form_place_authorization {
+  padding: 50px 0 0;
+}
+
+@media screen and (max-width: 544px) {
+  .form_place_authorization {
+    padding-top: 40px;
+  }
+}

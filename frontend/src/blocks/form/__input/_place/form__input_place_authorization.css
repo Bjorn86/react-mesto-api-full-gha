@@ -1,0 +1,9 @@
+.form__input_place_authorization {
+  border-bottom: 2px solid #CCC;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form__input_place_authorization::placeholder {
+  color: #CCC;
+}

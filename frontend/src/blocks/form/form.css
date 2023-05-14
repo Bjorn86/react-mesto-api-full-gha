@@ -1,0 +1,14 @@
+.form {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 46px 36px 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 544px) {
+  .form {
+    padding: 73px 22px 25px;
+  }
+}

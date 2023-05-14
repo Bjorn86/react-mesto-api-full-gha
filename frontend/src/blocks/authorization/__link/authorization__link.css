@@ -1,0 +1,8 @@
+.authorization__link {
+  text-decoration: none;
+  transition: opacity .6s;
+}
+
+.authorization__link:hover {
+  opacity: 0.6;
+}

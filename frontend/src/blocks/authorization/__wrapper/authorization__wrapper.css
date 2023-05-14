@@ -1,0 +1,11 @@
+.authorization__wrapper {
+  max-width: 358px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 544px) {
+  .authorization__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
