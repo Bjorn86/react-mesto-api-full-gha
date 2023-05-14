@@ -1,5 +1,3 @@
-[![Tests](https://github.com/yandex-praktikum/react-mesto-api-full-gha/actions/workflows/tests.yml/badge.svg)](https://github.com/yandex-praktikum/react-mesto-api-full-gha/actions/workflows/tests.yml)
-
 # Проект: Место (frontend + backend)
 
 Учебный проект выполненный в рамках курса "Веб-разработчик" от Яндекс Практикум.
@@ -92,15 +90,10 @@
 
 ### Ссылки на проект
 
-IP 158.160.53.34
-Frontend <https://mesto.ld-webdev.nomoredomains.monster>
-Backend <https://api.mesto.ld-webdev.nomoredomains.monster>
-[Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
-
-<!-- - [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
+- [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
 - [Ссылка на страницу проекта](https://mesto.ld-webdev.nomoredomains.monster)
 - [Ссылка на API сервер проекта](https://api.mesto.ld-webdev.nomoredomains.monster)
-- IP-адрес проекта: 158.160.53.34 -->
+- IP-адрес проекта: 158.160.53.34
 
 ## Ход выполнения проекта
 
@@ -114,7 +107,6 @@ Backend <https://api.mesto.ld-webdev.nomoredomains.monster>
 - [mongoose](https://mongoosejs.com/)
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [joi](https://joi.dev/)
 - [celebrate](https://www.npmjs.com/package/celebrate)
 - [validator](https://www.npmjs.com/package/validator)
 - [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)

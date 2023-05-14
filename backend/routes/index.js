@@ -7,13 +7,11 @@ const signup = require('./signup');
 const users = require('./users');
 const cards = require('./cards');
 const notFound = require('./notFound');
-const crashTest = require('./crashTest');
 
 // IMPORT MIDDLEWARES
 const auth = require('../middlewares/auth');
 
 // ROUTES METHODS
-rootRouter.use('/crash-test', crashTest);
 rootRouter.use('/signin', signin);
 rootRouter.use('/signup', signup);
 rootRouter.use('/users', auth, users);
