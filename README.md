@@ -101,9 +101,8 @@
 ### Ссылки на проект
 
 - [Ссылка на репозиторий проекта](https://github.com/Bjorn86/react-mesto-api-full-gha)
-- [Ссылка на страницу проекта](https://mesto.ld-webdev.nomoredomains.monster)
-- [Ссылка на API сервер проекта](https://api.mesto.ld-webdev.nomoredomains.monster)
-- IP-адрес проекта: 158.160.53.34
+- [Ссылка на страницу проекта](https://mesto.ld-webdev.ru)
+- [Ссылка на API сервер проекта](https://api.mesto.ld-webdev.ru)
 
 ## Ход выполнения проекта
 
@@ -148,3 +147,4 @@
 
 - e-mail: [legkobytov-danila@yandex.ru](mailto:legkobytov-danila@yandex.ru)
 - Telegram: [@danila_legkobytov](https://t.me/danila_legkobytov)
+- LinkedIn: [in/danila-legkobytov](https://www.linkedin.com/in/danila-legkobytov/)

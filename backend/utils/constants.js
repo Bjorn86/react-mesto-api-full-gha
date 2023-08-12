@@ -12,10 +12,10 @@ const LINK_REGEXP = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,}\.[a-zA-Z0-9()
 
 // ALLOWED CORS DOMAINS
 const ALLOWED_CORS = [
-  'http://mesto.ld-webdev.nomoredomains.monster',
-  'https://mesto.ld-webdev.nomoredomains.monster',
-  'http://158.160.53.34',
-  'https://158.160.53.34',
+  'http://mesto.ld-webdev.ru',
+  'https://mesto.ld-webdev.ru',
+  'http://77.232.131.208',
+  'https://77.232.131.208',
   'http://localhost:3000',
   'http://localhost:3001',
 ];

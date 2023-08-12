@@ -1,5 +1,5 @@
 // VARIABLES
-const BASE_URL = "https://api.mesto.ld-webdev.nomoredomains.monster";
+const BASE_URL = "https://api.mesto.ld-webdev.ru";
 
 // MAKE REQUEST TO THE SERVER
 function makeRequest(url, method, body) {
