@@ -24,7 +24,7 @@ const { DEFAULT_PORT, DEFAULT_DATABASE } = require('./utils/config');
 const app = express();
 
 // DATABASE CONNECT
-mongoose.connect(DATABASE || DEFAULT_DATABASE);
+mongoose.connect(DATABASE || DEFAULT_DATABASE, { authSource: 'admin' });
 
 // PARSERS METHODS
 app.use(express.json());
